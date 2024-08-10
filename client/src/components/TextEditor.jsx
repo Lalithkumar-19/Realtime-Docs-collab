@@ -112,7 +112,7 @@ const wrapperRef = useCallback((wrapper) => {
 
   return (
   <>
-  <h2 id="top">Google Docs</h2>
+  <h2 id="top">Realtime Docs</h2>
   
   <div className="container" ref={wrapperRef}></div>
   </>
