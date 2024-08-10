@@ -27,53 +27,56 @@ A real-time collaborative document editing application built with Node.js, Socke
 
 1. **Clone the Repository**
 
-   ```bash
+   ```
    git clone https://github.com/Lalithkumar-19/Realtime-Docs-collab.git
    cd Realtime-Docs-collab
 
    Install Dependencies
+   ```
    
 
 **Install dependencies for the backend:**
 
-```bash
+```
 cd server
 npm install
-` ``` `
+``` 
 
 **Install dependencies for the frontend:**
 
-```bash
-Copy code
+```
 cd ../client
 npm install
-Running the Application
+```
+# Running the Application
 ## 1. Start the Backend
 Navigate to the server directory:
 
-bash
-Copy code
+```
 cd server
-Create a .env file in the server directory with the following content:
+```
+*** Create a .env file in the server directory with the following content:
 
 MONGO_URL=<your-mongodb-connection-string>
 ## Start the Node.js server:
 
-``` bash
+``` 
 npm run dev
+```
 The backend server will start on port 3001 by default.
 
 ## 2. Start the Frontend
 Navigate to the client directory:
 
-``` bash
+``` 
 
 cd ../client
+```
 Start the Vite development server:
 
-``` bash
+``` 
 npm run dev
-
+```
 The frontend server will start on port 5173 by default.
 
 # Usage
