@@ -1,11 +1,12 @@
 const { default: mongoose } = require("mongoose");
 const Document = require("./Document");
 require("dotenv").config();
+const http =require("http");
 const { MONGO_URL } = process.env;
 
 mongoose.connect( MONGO_URL).then(()=>console.log("connected to DB successfully"));
-
-const io=require("socket.io")(3001,{
+const server=http.createServer();
+const io=require("socket.io")(server,{
     cors: {
         origin: "https://realtime-docs-collab-jc6a.vercel.app/",
         methods: ["GET", "POST"],
@@ -62,3 +63,10 @@ async function findorcreateDocument(id){
     })
 
 }
+
+
+
+const PORT = process.env.PORT || 5000;
+server.listen(PORT,()=>{
+  console.log("server is running successfully");
+})
