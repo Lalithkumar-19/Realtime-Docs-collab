@@ -39,6 +39,7 @@ A real-time collaborative document editing application built with Node.js, Socke
 ```bash
 cd server
 npm install
+` ``` `
 
 **Install dependencies for the frontend:**
 
