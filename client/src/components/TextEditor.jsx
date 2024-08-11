@@ -38,7 +38,7 @@ const TextEditor=()=> {
 
   useEffect(() => {
     //connecting to backend socket io server;
-    const s = io("https://realtime-docs-collab.onrender.com/");
+    const s = io("https://realtime-docs-collab.onrender.com");
     setSocket(s);
     return () => {
       s.disconnect();

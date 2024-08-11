@@ -8,7 +8,7 @@ mongoose.connect( MONGO_URL).then(()=>console.log("connected to DB successfully"
 const server=http.createServer();
 const io=require("socket.io")(server,{
     cors: {
-        origin: "https://realtime-docs-collab-jc6a.vercel.app/",
+        origin: "*",
         methods: ["GET", "POST"],
         credentials: true
       }
